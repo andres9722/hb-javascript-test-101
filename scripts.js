@@ -71,8 +71,10 @@ export class Person {
     }
 }
 
+let person = new Person('Jhon', 25)
+
 export function personAge(person) {
-    console.log(`Age: ${person.age}`)
+    console.log(person.age)
 }
 
 
