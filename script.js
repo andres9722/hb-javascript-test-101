@@ -23,7 +23,7 @@ export function filterNegativeNumbers(vec) {
     let elements = []
     for (let i = 0; i < vec.length; i++) {
         if(vec[i] >= 0) {
-            elements[i] = vec[i];
+            elements.push(vec[i]);
         }
     }
     return elements
@@ -41,7 +41,7 @@ export function functionalMapNumbersIntoStrings(vec) {
 export function mapNumbersIntoStrings(vec) {
     let elements = []
     for (let i = 0; i < vec.length; i++) {
-        elements[i] = vec[i].toString();
+        elements.push(vec[i].toString());
     }
     return elements
 }
@@ -49,13 +49,15 @@ export function mapNumbersIntoStrings(vec) {
 /////////////////////////////////////////////////////////
 
 export function printType(data) {
-    return typeof data
+    console.log(typeof data)
 }
 
 /////////////////////////////////////////////////////////
 
 export function isPalindrome(str) {
-    return str == str.split('').reverse().join('');
+    let pal = str.trim().toLowerCase()
+    var cleanString = pal.replace(/\|&;\$%@"<>\(\)\+,/g, "");
+    return cleanString == cleanString.split('').reverse().join('');
 }
 
 /////////////////////////////////////////////////////////
@@ -73,7 +75,7 @@ export class Person {
 
 let person = new Person('Jhon', 25)
 
-export function personAge(person) {
+export function printOutPersonAge(person) {
     console.log(person.age)
 }
 
