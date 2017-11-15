@@ -1,23 +1,19 @@
 'use strict'
 
 export function generateRandomColor() {
-    let r = Math.trunc(Math.random() * 100),
-        g = Math.trunc(Math.random() * 100),
-        b = Math.trunc(Math.random() * 100),
+    let r = Math.trunc(Math.random() * 255),
+        g = Math.trunc(Math.random() * 255),
+        b = Math.trunc(Math.random() * 255),
         json =  {
             r, g, b
         }
         return json
 }
 
-/////////////////////////////////////////////////////////
-
 export function functionalFilterNegativeNumbers(vec){
     let n = vec.filter(num => num >= 0)
     return n
 }
-
-/////////////////////////////////////////////////////////
 
 export function filterNegativeNumbers(vec) {
     let elements = []
@@ -29,14 +25,10 @@ export function filterNegativeNumbers(vec) {
     return elements
 }
 
-/////////////////////////////////////////////////////////
-
 export function functionalMapNumbersIntoStrings(vec) {
     let n = vec.map(num => num.toString())
     return n
 }
-
-/////////////////////////////////////////////////////////
 
 export function mapNumbersIntoStrings(vec) {
     let elements = []
@@ -46,21 +38,15 @@ export function mapNumbersIntoStrings(vec) {
     return elements
 }
 
-/////////////////////////////////////////////////////////
-
 export function printType(data) {
     console.log(typeof data)
 }
 
-/////////////////////////////////////////////////////////
-
 export function isPalindrome(str) {
-    let pal = str.trim().toLowerCase()
-    var cleanString = pal.replace(/\|&;\$%@"<>\(\)\+,/g, "");
-    return cleanString == cleanString.split('').reverse().join('');
+    let pal = str.replace(/\s/g,'').toLowerCase()
+    let cleanString = pal.replace(/[\|&;\$%@"<>\(\)\+,*.]/g, "")
+    return cleanString === cleanString.split('').reverse().join('')
 }
-
-/////////////////////////////////////////////////////////
 
 export class Person {
     constructor(name, age) {
@@ -72,8 +58,6 @@ export class Person {
         console.log(this.name)
     }
 }
-
-let person = new Person('Jhon', 25)
 
 export function printOutPersonAge(person) {
     console.log(person.age)
