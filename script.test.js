@@ -19,8 +19,25 @@ describe('generateRandomColor', () => {
         }))
     })
 
-    it('the numbers should be less than 255', () => {
-    })
+    /*it('the numbers should be less than 255', () => {
+        const value = 896
+        const max = 256
+        expect(generateRandomColor()).toMatchObject(expect.objectContaining({
+            r: expect(value).not.toBeGreaterThanOrEqual(max),
+            g: expect(value).not.toBeGreaterThanOrEqual(max),
+            b: expect(value).not.toBeGreaterThanOrEqual(max)
+        }))
+    })*/
+
+    /*it('the numbers should not have decimal numbers', () => {
+        const decimal = 150
+        const data = 150.5666
+        expect(generateRandomColor()).toMatchObject(expect.objectContaining({
+            r: expect(decimal).not.toEqual(data),
+            g: expect(decimal).not.toEqual(data),
+            b: expect(decimal).not.toEqual(data)
+        }))
+    })*/
 })
 
 describe('filterNegativeNumbers', () => {

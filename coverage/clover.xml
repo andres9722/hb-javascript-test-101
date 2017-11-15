@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1510749530845" clover="3.2.0">
-  <project timestamp="1510749530845" name="All files">
+<coverage generated="1510753560442" clover="3.2.0">
+  <project timestamp="1510753560442" name="All files">
     <metrics statements="26" coveredstatements="26" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="12" elements="40" coveredelements="40" complexity="0" loc="26" ncloc="26" packages="1" files="1" classes="1">
       <file name="script.js" path="C:\Users\user\Desktop\hb-javascript-test-101\script.js">
         <metrics statements="26" coveredstatements="26" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="12"/>
