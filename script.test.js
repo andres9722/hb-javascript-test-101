@@ -10,7 +10,7 @@ import {
     printOutPersonAge
 } from './script.js'
 
-test('should have "r", "g" and "b" as properties with numbers as values', () => {
+/*test('should have "r", "g" and "b" as properties with numbers as values', () => {
     expect(generateRandomColor()).toMatchObject(expect.objectContaining({
         r: expect.any(Number),
         g: expect.any(Number),
@@ -118,9 +118,9 @@ test('should return an instance with the correct values when calling it as a con
 test('should print in console the age of the given instance', () => {
     printOutPersonAge(new Person('Andres', 19))
     expect(global.console.log).toHaveBeenCalledWith(19)
-})
+})*/
 
-/*describe('generateRandomColor', () => {
+describe('generateRandomColor', () => {
     it('should have "r", "g" and "b" as properties with numbers as values', () => {
         expect(generateRandomColor()).toMatchObject(expect.objectContaining({
             r: expect.any(Number),
@@ -145,7 +145,7 @@ test('should print in console the age of the given instance', () => {
         expect(values.g % 1 == 0).toBeTruthy()
         expect(values.b % 1 == 0).toBeTruthy()
     })
-})*/
+
 
 /*describe('filterNegativeNumbers', () => {
     it('should return a new array without negative numbers', () => {
