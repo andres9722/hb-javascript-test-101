@@ -5,8 +5,8 @@
   "main": "script.js",
   "private": true,
   "scripts": {
-    "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test": "jest --coverage",
+    "report-coverage": "cat ./coverage/lcov.info | codecov"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/andres9722/hb-javascript-test-101#readme",
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
+    "codecov.io": "^0.1.6",
     "jest": "^21.2.1"
   }
 }
