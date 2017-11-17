@@ -11,6 +11,7 @@ Adding in Scripts:
 ```"scripts": {
     "test": "jest --coverage",
     "report-coverage": "cat ./coverage/lcov.info | codecov"
-}```
+}
+```
 
 Config repo in Travis CI
