@@ -8,7 +8,7 @@ Install in devDependencies codecov.io
 Create archive .travis.yml
 
 Adding in Scripts:
-```
+```javascript
 "scripts": {
     "test": "jest --coverage",
     "report-coverage": "cat ./coverage/lcov.info | codecov"
