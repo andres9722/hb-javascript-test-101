@@ -58,7 +58,7 @@ describe('filterNegativeNumbers', () => {
 
     it('should not modify the original array', () => {
         const arr = [-5, 0, 5]
-        const arrCopy = JSON.parse(JSON.stringify(arr))
+        const arrCopy = Array.from(arr)
         filterNegativeNumbers(arr)
         expect(arr).toEqual(arrCopy)
     })
@@ -78,7 +78,7 @@ describe('mapNumbersIntoStrings', () => {
 
     it('should not modify the original array', () => {
         const arr = [-5, 0, 5]
-        const arrCopy = JSON.parse(JSON.stringify(arr))
+        const arrCopy = Array.from(arr)
         mapNumbersIntoStrings(arr)
         expect(arr).toEqual(arrCopy)
     })
